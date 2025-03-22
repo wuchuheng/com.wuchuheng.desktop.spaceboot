@@ -1,0 +1,7 @@
+*.{js,jsx,ts,tsx} eol=lf
+*.json eol=lf
+*.md eol=lf
+*.{yml,yaml} eol=lf
+.npmrc eol=lf
+.gitattributes eol=lf
+.editorconfig eol=lf

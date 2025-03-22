@@ -4,6 +4,13 @@
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": ".vite/build/main.js",
+  "engines": {
+    "node": "22.14.0",
+    "npm": "please-use-pnpm",
+    "yarn": "please-use-pnpm",
+    "pnpm": "8.15.0"
+  },
+  "packageManager": "pnpm@8.15.0",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -12,7 +19,7 @@
     "lint": "eslint --ext .ts,.tsx ."
   },
   "keywords": [],
-  "author": "Administrator",
+  "author": "wuchuheng",
   "license": "MIT",
   "devDependencies": {
     "@electron-forge/cli": "^7.7.0",
