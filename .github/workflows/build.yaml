@@ -1,4 +1,4 @@
-name: Build
+name: Build app
 
 on:
   push:
@@ -21,10 +21,18 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '22.14.0'
-        cache: 'pnpm'
+        cache: 'npm'
+    - name: Install pnpm
+      run: npm install -g pnpm
+    
+    - name: Configure pnpm
+      run: pnpm config set store-dir .pnpm-store
 
     - name: Install dependencies
       run: pnpm install
 
     - name: Build
-      run: pnpm run build
+      run: pnpm run package
+
+    - name: Build app
+      run: pnpm run make
